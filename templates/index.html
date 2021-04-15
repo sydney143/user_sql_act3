@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+</head>
+<body>
+ 
+<a href="/create_page"> add user</a>
+    <h1>All users</h1>
+    {% for one_user in all_users%}
+    <p>first_name: {{one_user['first_name']}}</p>
+    <p>last_name: {{one_user['last_name']}}</p>
+    <p>email: {{one_user['email']}}</p>
+    {%endfor%}
+
+</body>
